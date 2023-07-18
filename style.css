@@ -1,0 +1,200 @@
+*{
+    background: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+.upper-navbar {
+    background-color: #080433;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: transparent;
+    
+  }
+
+  .upper-navbar ul {
+    list-style-type: none;
+    margin: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .upper-navbar li {
+    display: inline-block;
+    position: relative;
+    left: 44rem;
+    margin-right: 25px;
+  }
+  
+  .upper-navbar a {
+    display: block;
+    margin-left: 30px;
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+  }
+
+  .upper-navbar img{
+    position: absolute;
+    left: 10rem;
+    top: 1rem;
+    height: 3.6rem;
+    width: 3.2rem;
+  }
+
+.upper-navbar a:hover {
+    color: #fff;
+  }
+  
+ .content{
+    position: absolute;
+    top: 200px;
+    left: 165px;
+    height: 500px;
+    width: 550px;
+    color: #fff;
+    background: transparent;
+ } 
+
+ .content h1{
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 40px;
+    background: transparent;
+ }
+
+ .content p{
+    font-size: 20px;
+    opacity: 0.8;
+    background: transparent;
+ }
+
+ .btn-container button{
+    height: 60px;
+    width: 200px;
+    padding: 5px;
+    color: #222;
+    background-color: #1adb80;
+    margin-right: 39px;
+    padding: 15px 36px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    top: 50px;
+ }
+
+ .btn-container button:hover{
+    cursor: pointer;
+ }
+
+ .btn-container{
+    display: flex;
+ }
+ .photo{
+    position: absolute;
+    left: 730px;
+    top: 170px;
+
+ }
+
+ .photo img{
+    height: 370px;
+    width: 550px;
+ }
+
+  section{
+    position: relative;
+    top: 630px;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+ } 
+
+ section .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(./pictures/wave.png);
+    background-size: 1000px 100px;
+ }
+
+ section .wave.wave1{
+    animation: animate 20s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+ }
+
+ @keyframes animate{
+
+    0%{
+        background-position-x: 0;
+    }
+
+    100%{
+        background-position-x: 1000px;
+    }
+    
+ }
+
+ section .wave.wave2{
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+ }
+
+ @keyframes animate2 {
+    
+    0%{
+        background-position-x: 0;
+    }
+
+    100%{
+        background-position-x: -1000px;
+    }
+ }
+
+ 
+ section .wave.wave3{
+    animation: animate 12s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 13px;
+ }
+
+ section .wave.wave4{
+    animation: animate2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+ }
+
+ .stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./pictures/stars2.jpg) repeat;
+    z-index: -1;
+    animation: animateStars 10s linear infinite;
+  }
+  
+  @keyframes animateStars {
+    0% {
+      background-position-y: 0 0;
+    }
+
+    100% {
+      background-position-y: -500px;
+    }
+  }
+
